@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.11.0</Version>
+  <Author>Owen Merkling</Author>
+ </Creator>
+ <Manufacturer>Blizzard</Manufacturer>
+ <Model>Helios</Model>
+ <Type>Moving Head</Type>
+ <Channel Name="Pan">
+  <Group Byte="0">Pan</Group>
+  <Capability Min="0" Max="255">Pan 0-540</Capability>
+ </Channel>
+ <Channel Name="Pan Fine">
+  <Group Byte="1">Pan</Group>
+  <Capability Min="0" Max="255">Pan Fine</Capability>
+ </Channel>
+ <Channel Name="Tilt">
+  <Group Byte="0">Tilt</Group>
+  <Capability Min="0" Max="255">Tilt 0-270</Capability>
+ </Channel>
+ <Channel Name="Tilt Fine">
+  <Group Byte="1">Tilt</Group>
+  <Capability Min="0" Max="255">Tilt Fine</Capability>
+ </Channel>
+ <Channel Name="Move Speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="255">Speed Fast to Slow</Capability>
+ </Channel>
+ <Channel Name="Dimmer">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="9">Off</Capability>
+  <Capability Min="10" Max="255">Line Dimmer</Capability>
+ </Channel>
+ <Channel Name="Strobe">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="4">Off</Capability>
+  <Capability Min="5" Max="9">Open (No Strobe)</Capability>
+  <Capability Min="10" Max="199">Strobe Slow to Fast</Capability>
+  <Capability Min="200" Max="204">Open</Capability>
+  <Capability Min="205" Max="224">Random Strobe Slow to Fast</Capability>
+  <Capability Min="225" Max="229">Open</Capability>
+  <Capability Min="230" Max="249">Random Color Strobe Slow to Fast</Capability>
+  <Capability Min="250" Max="255">Open</Capability>
+ </Channel>
+ <Channel Name="Red">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="255">Red</Capability>
+ </Channel>
+ <Channel Name="Red Fine">
+  <Group Byte="1">Intensity</Group>
+  <Colour>Red</Colour>
+  <Capability Min="0" Max="255">Red Fine</Capability>
+ </Channel>
+ <Channel Name="Green">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Green</Colour>
+  <Capability Min="0" Max="255">Green</Capability>
+ </Channel>
+ <Channel Name="Green Fine">
+  <Group Byte="1">Intensity</Group>
+  <Colour>Green</Colour>
+  <Capability Min="0" Max="255">Green Fine</Capability>
+ </Channel>
+ <Channel Name="Blue">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Blue</Colour>
+  <Capability Min="0" Max="255">Blue</Capability>
+ </Channel>
+ <Channel Name="Blue Fine">
+  <Group Byte="1">Intensity</Group>
+  <Colour>Blue</Colour>
+  <Capability Min="0" Max="255">Blue Fine</Capability>
+ </Channel>
+ <Channel Name="White">
+  <Group Byte="0">Intensity</Group>
+  <Colour>White</Colour>
+  <Capability Min="0" Max="255">White</Capability>
+ </Channel>
+ <Channel Name="White Fine">
+  <Group Byte="1">Intensity</Group>
+  <Colour>White</Colour>
+  <Capability Min="0" Max="255">White Fine</Capability>
+ </Channel>
+ <Channel Name="Virtual Color">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="9">None</Capability>
+  <Capability Min="10" Max="19">2700k (255,168,000,255)</Capability>
+  <Capability Min="20" Max="29">3200k (255,180,000,255)</Capability>
+  <Capability Min="30" Max="39">4200k (247,214,019,255)</Capability>
+  <Capability Min="40" Max="49">5600k (217,251,050,255)</Capability>
+  <Capability Min="50" Max="59">8000k (168,255,084,255)</Capability>
+  <Capability Min="60" Max="69">Red     (255,000,000,000)</Capability>
+  <Capability Min="70" Max="79">Org.    (255,097,000,000)</Capability>
+  <Capability Min="80" Max="89">Green (000,255,000,000)</Capability>
+  <Capability Min="90" Max="99">Blue    (000,000,255,000)</Capability>
+  <Capability Min="100" Max="109">Yel.      (255,255,000,000)</Capability>
+  <Capability Min="110" Max="119">Cyan   (000,255,255,000)</Capability>
+  <Capability Min="120" Max="129">Mgn.   (255,000,255,000)</Capability>
+  <Capability Min="130" Max="139">White  (255,255,255,255)</Capability>
+  <Capability Min="140" Max="255">Virtual Color Rainbow</Capability>
+ </Channel>
+ <Channel Name="Static Gobo">
+  <Group Byte="0">Gobo</Group>
+  <Capability Min="0" Max="9">Open</Capability>
+  <Capability Min="10" Max="19" Res="Chauvet/gobo00034.png">Gobo 1 Spots</Capability>
+  <Capability Min="20" Max="29" Res="Chauvet/gobo00017.png">Gobo 2 Flower</Capability>
+  <Capability Min="30" Max="39" Res="SGM/gobo00361.png">Gobo 3 Weave Knot</Capability>
+  <Capability Min="40" Max="49">Gobo 4 Keyhole Ring</Capability>
+  <Capability Min="50" Max="59">Gobo 5 Broken Cloverleaf</Capability>
+  <Capability Min="60" Max="69" Res="Others/gobo00015.png">Gobo 6 Circle Octogons x 4</Capability>
+  <Capability Min="70" Max="79" Res="SGM/gobo00092.png">Gobo 7 Skinny Daisy</Capability>
+  <Capability Min="80" Max="89">Gobo 1 Shake</Capability>
+  <Capability Min="90" Max="99">Gobo 2 Shake</Capability>
+  <Capability Min="100" Max="109">Gobo 3 Shake</Capability>
+  <Capability Min="110" Max="119">Gobo 4 Shake</Capability>
+  <Capability Min="120" Max="129">Gobo 5 Shake</Capability>
+  <Capability Min="130" Max="139">Gobo 6 Shake</Capability>
+  <Capability Min="140" Max="149">Gobo 7 Shake</Capability>
+  <Capability Min="150" Max="202">Forward Rotate Wheel Fast to Slow</Capability>
+  <Capability Min="203" Max="255">Reverse Rotate Wheel Slow to Fast</Capability>
+ </Channel>
+ <Channel Name="No Function">
+  <Group Byte="0">Nothing</Group>
+ </Channel>
+ <Channel Name="Rotating Gobo">
+  <Group Byte="0">Gobo</Group>
+ </Channel>
+ <Channel Name="Gobo Rotation">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="127">Index Position</Capability>
+  <Capability Min="128" Max="190">Forward Fast to Slow</Capability>
+  <Capability Min="191" Max="192">Stop</Capability>
+  <Capability Min="193" Max="255">Reverse Slow to Fast</Capability>
+ </Channel>
+ <Channel Name="Prism">
+  <Group Byte="0">Prism</Group>
+  <Capability Min="0" Max="127">Out</Capability>
+  <Capability Min="128" Max="255">In</Capability>
+ </Channel>
+ <Channel Name="Prism Rotation">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="127">Angle Index 0-540</Capability>
+  <Capability Min="128" Max="190">Forward Fast to Slow</Capability>
+  <Capability Min="191" Max="192">Stop</Capability>
+  <Capability Min="193" Max="255">Reverse Slow to Fast</Capability>
+ </Channel>
+ <Channel Name="Focus">
+  <Group Byte="0">Beam</Group>
+  <Capability Min="0" Max="255">Line Focus</Capability>
+ </Channel>
+ <Channel Name="Call Program">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="50">No Function</Capability>
+  <Capability Min="51" Max="100">Program 1</Capability>
+  <Capability Min="101" Max="150">Program 2</Capability>
+  <Capability Min="151" Max="200">Program 3</Capability>
+  <Capability Min="201" Max="255">Program 4</Capability>
+ </Channel>
+ <Channel Name="Function (Hold 5 seconds)">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="0" Max="24">Unused</Capability>
+  <Capability Min="25" Max="49">Reset Effects</Capability>
+  <Capability Min="50" Max="74">Unused</Capability>
+  <Capability Min="75" Max="99">Reset Pan Tilt</Capability>
+  <Capability Min="100" Max="124">Unused</Capability>
+  <Capability Min="125" Max="149">Reset All</Capability>
+  <Capability Min="150" Max="255">Unused</Capability>
+ </Channel>
+ <Mode Name="Extended">
+  <Physical>
+   <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+   <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+   <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+   <Focus Type="Head" PanMax="540" TiltMax="270"/>
+   <Technical PowerConsumption="150" DmxConnector="5-pin"/>
+  </Physical>
+  <Channel Number="0">Pan</Channel>
+  <Channel Number="1">Pan Fine</Channel>
+  <Channel Number="2">Tilt</Channel>
+  <Channel Number="3">Tilt Fine</Channel>
+  <Channel Number="4">Move Speed</Channel>
+  <Channel Number="5">Dimmer</Channel>
+  <Channel Number="6">Strobe</Channel>
+  <Channel Number="7">Red</Channel>
+  <Channel Number="8">Red Fine</Channel>
+  <Channel Number="9">Green</Channel>
+  <Channel Number="10">Green Fine</Channel>
+  <Channel Number="11">Blue</Channel>
+  <Channel Number="12">Blue Fine</Channel>
+  <Channel Number="13">White</Channel>
+  <Channel Number="14">White Fine</Channel>
+  <Channel Number="15">Virtual Color</Channel>
+  <Channel Number="16">Static Gobo</Channel>
+  <Channel Number="17">No Function</Channel>
+  <Channel Number="18">Rotating Gobo</Channel>
+  <Channel Number="19">Gobo Rotation</Channel>
+  <Channel Number="20">Prism</Channel>
+  <Channel Number="21">Prism Rotation</Channel>
+  <Channel Number="22">Focus</Channel>
+  <Channel Number="23">Call Program</Channel>
+  <Channel Number="24">Function (Hold 5 seconds)</Channel>
+ </Mode>
+ <Mode Name="Standard">
+  <Physical>
+   <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+   <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+   <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+   <Focus Type="Head" PanMax="540" TiltMax="270"/>
+   <Technical PowerConsumption="150" DmxConnector="5-pin"/>
+  </Physical>
+  <Channel Number="0">Pan</Channel>
+  <Channel Number="1">Pan Fine</Channel>
+  <Channel Number="2">Tilt</Channel>
+  <Channel Number="3">Tilt Fine</Channel>
+  <Channel Number="4">Move Speed</Channel>
+  <Channel Number="5">Dimmer</Channel>
+  <Channel Number="6">Strobe</Channel>
+  <Channel Number="7">Red</Channel>
+  <Channel Number="8">Green</Channel>
+  <Channel Number="9">Blue</Channel>
+  <Channel Number="10">White</Channel>
+  <Channel Number="11">Virtual Color</Channel>
+  <Channel Number="12">Static Gobo</Channel>
+  <Channel Number="13">No Function</Channel>
+  <Channel Number="14">Rotating Gobo</Channel>
+  <Channel Number="15">Gobo Rotation</Channel>
+  <Channel Number="16">Prism</Channel>
+  <Channel Number="17">Prism Rotation</Channel>
+  <Channel Number="18">Focus</Channel>
+  <Channel Number="19">Call Program</Channel>
+  <Channel Number="20">Function (Hold 5 seconds)</Channel>
+ </Mode>
+ <Mode Name="Short">
+  <Physical>
+   <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+   <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+   <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+   <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+   <Technical PowerConsumption="0" DmxConnector="5-pin"/>
+  </Physical>
+  <Channel Number="0">Pan</Channel>
+  <Channel Number="1">Tilt</Channel>
+  <Channel Number="2">Dimmer</Channel>
+  <Channel Number="3">Strobe</Channel>
+  <Channel Number="4">Red</Channel>
+  <Channel Number="5">Green</Channel>
+  <Channel Number="6">Blue</Channel>
+  <Channel Number="7">White</Channel>
+  <Channel Number="8">Static Gobo</Channel>
+  <Channel Number="9">No Function</Channel>
+  <Channel Number="10">Rotating Gobo</Channel>
+  <Channel Number="11">Gobo Rotation</Channel>
+  <Channel Number="12">Prism</Channel>
+  <Channel Number="13">Prism Rotation</Channel>
+  <Channel Number="14">Focus</Channel>
+  <Channel Number="15">Call Program</Channel>
+  <Channel Number="16">Function (Hold 5 seconds)</Channel>
+ </Mode>
+</FixtureDefinition>

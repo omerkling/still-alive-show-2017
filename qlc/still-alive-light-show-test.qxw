@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Workspace>
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FixtureManager">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.11.0</Version>
+  <Author>Owen Merkling</Author>
+ </Creator>
+ <Engine>
+  <InputOutputMap>
+   <Universe Name="Universe 1" ID="0"/>
+   <Universe Name="Universe 2" ID="1"/>
+   <Universe Name="Universe 3" ID="2"/>
+   <Universe Name="Universe 4" ID="3"/>
+  </InputOutputMap>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>0</ID>
+   <Name>DC Dimmer #1</Name>
+   <Universe>0</Universe>
+   <Address>0</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>1</ID>
+   <Name>DL Dimmer #4</Name>
+   <Universe>0</Universe>
+   <Address>3</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>2</ID>
+   <Name>DR Dimmer #5</Name>
+   <Universe>0</Universe>
+   <Address>4</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Generic</Manufacturer>
+   <Model>Generic</Model>
+   <Mode>1 Channel</Mode>
+   <ID>3</ID>
+   <Name>UC Dimmer #6</Name>
+   <Universe>0</Universe>
+   <Address>5</Address>
+   <Channels>1</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Optima Lighting</Manufacturer>
+   <Model>PAR64 LED</Model>
+   <Mode>Default</Mode>
+   <ID>4</ID>
+   <Name>DL PAR64 LED #1</Name>
+   <Universe>0</Universe>
+   <Address>10</Address>
+   <Channels>5</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Optima Lighting</Manufacturer>
+   <Model>PAR64 LED</Model>
+   <Mode>Default</Mode>
+   <ID>5</ID>
+   <Name>UC PAR64 LED #2</Name>
+   <Universe>0</Universe>
+   <Address>15</Address>
+   <Channels>5</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Optima Lighting</Manufacturer>
+   <Model>PAR64 LED</Model>
+   <Mode>Default</Mode>
+   <ID>6</ID>
+   <Name>DC PAR64 LED #3</Name>
+   <Universe>0</Universe>
+   <Address>20</Address>
+   <Channels>5</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Optima Lighting</Manufacturer>
+   <Model>PAR64 LED</Model>
+   <Mode>Default</Mode>
+   <ID>7</ID>
+   <Name>DR PAR64 LED #4</Name>
+   <Universe>0</Universe>
+   <Address>25</Address>
+   <Channels>5</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Optima Lighting</Manufacturer>
+   <Model>PAR64 LED</Model>
+   <Mode>Default</Mode>
+   <ID>8</ID>
+   <Name>DIR PAR64 LED #5</Name>
+   <Universe>0</Universe>
+   <Address>30</Address>
+   <Channels>5</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Irradiant</Manufacturer>
+   <Model>PAR64 LED</Model>
+   <Mode>Default</Mode>
+   <ID>9</ID>
+   <Name>DL IR PAR64 LED #1</Name>
+   <Universe>0</Universe>
+   <Address>35</Address>
+   <Channels>6</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Irradiant</Manufacturer>
+   <Model>PAR64 LED</Model>
+   <Mode>Default</Mode>
+   <ID>10</ID>
+   <Name>DC IR PAR64 LED #2</Name>
+   <Universe>0</Universe>
+   <Address>41</Address>
+   <Channels>6</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Irradiant</Manufacturer>
+   <Model>PAR64 LED</Model>
+   <Mode>Default</Mode>
+   <ID>11</ID>
+   <Name>UC IR PAR64 LED #3</Name>
+   <Universe>0</Universe>
+   <Address>47</Address>
+   <Channels>6</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Irradiant</Manufacturer>
+   <Model>PAR64 LED</Model>
+   <Mode>Default</Mode>
+   <ID>12</ID>
+   <Name>DR IR PAR64 LED #4</Name>
+   <Universe>0</Universe>
+   <Address>53</Address>
+   <Channels>6</Channels>
+  </Fixture>
+  <Function ID="1" Type="Scene" Name="New Scene 1">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="3"/>
+   <FixtureVal ID="11"/>
+   <FixtureVal ID="5"/>
+  </Function>
+  <Function ID="2" Type="RGBMatrix" Name="New RGB Matrix 2">
+   <Speed FadeIn="0" FadeOut="0" Duration="500"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <Algorithm Type="Script">Stripes</Algorithm>
+   <DimmerControl>1</DimmerControl>
+   <MonoColor>4294901760</MonoColor>
+   <FixtureGroup>4294967295</FixtureGroup>
+  </Function>
+  <Function ID="3" Type="EFX" Name="New EFX 3">
+   <PropagationMode>Parallel</PropagationMode>
+   <Speed FadeIn="0" FadeOut="0" Duration="20000"/>
+   <Direction>Backward</Direction>
+   <RunOrder>SingleShot</RunOrder>
+   <Algorithm>Lissajous</Algorithm>
+   <Width>127</Width>
+   <Height>127</Height>
+   <Rotation>0</Rotation>
+   <StartOffset>0</StartOffset>
+   <IsRelative>0</IsRelative>
+   <Axis Name="X">
+    <Offset>127</Offset>
+    <Frequency>2</Frequency>
+    <Phase>90</Phase>
+   </Axis>
+   <Axis Name="Y">
+    <Offset>127</Offset>
+    <Frequency>3</Frequency>
+    <Phase>0</Phase>
+   </Axis>
+  </Function>
+ </Engine>
+ <VirtualConsole>
+  <Frame Caption="">
+   <Appearance>
+    <FrameStyle>None</FrameStyle>
+    <ForegroundColor>Default</ForegroundColor>
+    <BackgroundColor>Default</BackgroundColor>
+    <BackgroundImage>None</BackgroundImage>
+    <Font>Default</Font>
+   </Appearance>
+   <Slider Caption="Slider 0" ID="0" WidgetStyle="Slider" InvertedAppearance="false">
+    <WindowState Visible="False" X="0" Y="0" Width="60" Height="200"/>
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None">Playback</SliderMode>
+    <Level LowLimit="0" HighLimit="255" Value="0"/>
+    <Playback>
+     <Function>4294967295</Function>
+    </Playback>
+   </Slider>
+  </Frame>
+  <Properties>
+   <Size Width="1920" Height="1080"/>
+   <GrandMaster ChannelMode="Intensity" ValueMode="Reduce" SliderMode="Normal"/>
+  </Properties>
+ </VirtualConsole>
+ <SimpleDesk>
+  <Engine/>
+ </SimpleDesk>
+</Workspace>
