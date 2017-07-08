@@ -128,6 +128,23 @@
  </Channel>
  <Channel Name="Rotating Gobo">
   <Group Byte="0">Gobo</Group>
+  <Capability Min="0" Max="9">None</Capability>
+  <Capability Min="10" Max="19" Res="Robe/gobo00065.png">Gobo 1 Ripples</Capability>
+  <Capability Min="20" Max="29" Res="ClayPaky/gobo00041.png">Gobo 2 Web</Capability>
+  <Capability Min="30" Max="39" Res="SGM/gobo00366.png">Gobo 3 Tight Knot</Capability>
+  <Capability Min="40" Max="49" Res="Others/gobo00005.png">Gobo 4 Radiation Blue</Capability>
+  <Capability Min="50" Max="59" Res="SGM-Color/gobo00409.png">Gobo 5 Blocky Sunburst</Capability>
+  <Capability Min="60" Max="69">Gobo 6 Distorted Checkerboard Green</Capability>
+  <Capability Min="70" Max="79">Gobo 7 Amoeba</Capability>
+  <Capability Min="80" Max="89">Gobo 1 Shake</Capability>
+  <Capability Min="90" Max="99">Gobo 2 Shake</Capability>
+  <Capability Min="100" Max="109">Gobo 3 Shake</Capability>
+  <Capability Min="110" Max="119">Gobo 4 Shake</Capability>
+  <Capability Min="120" Max="129">Gobo 5 Shake</Capability>
+  <Capability Min="130" Max="139">Gobo 6 Shake</Capability>
+  <Capability Min="140" Max="149">Gobo 7 Shake</Capability>
+  <Capability Min="150" Max="202">Foward Wheel Rotation Fast Slow</Capability>
+  <Capability Min="203" Max="255">Reverse Wheel Rotation Slow Fast</Capability>
  </Channel>
  <Channel Name="Gobo Rotation">
   <Group Byte="0">Effect</Group>
