@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="VirtualConsole">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="SimpleDesk">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.11.0</Version>
-  <Author>Owen Merkling</Author>
+  <Version>4.10.5b</Version>
+  <Author>omerkling</Author>
  </Creator>
  <Engine>
   <InputOutputMap>
    <Universe Name="Universe 1" ID="0">
     <Output Plugin="DMX USB" Line="0">
-     <PluginParameters UniverseChannels="150"/>
+     <PluginParameters UniverseChannels="200"/>
     </Output>
    </Universe>
    <Universe Name="Universe 2" ID="1"/>
@@ -26,6 +26,7 @@
    <Universe>0</Universe>
    <Address>0</Address>
    <Channels>1</Channels>
+   <Modifier Channel="0" Name="Exponential Shallow"/>
   </Fixture>
   <Fixture>
    <Manufacturer>Generic</Manufacturer>
@@ -36,6 +37,7 @@
    <Universe>0</Universe>
    <Address>3</Address>
    <Channels>1</Channels>
+   <Modifier Channel="0" Name="Exponential Shallow"/>
   </Fixture>
   <Fixture>
    <Manufacturer>Generic</Manufacturer>
@@ -46,6 +48,7 @@
    <Universe>0</Universe>
    <Address>4</Address>
    <Channels>1</Channels>
+   <Modifier Channel="0" Name="Exponential Shallow"/>
   </Fixture>
   <Fixture>
    <Manufacturer>Generic</Manufacturer>
@@ -56,6 +59,7 @@
    <Universe>0</Universe>
    <Address>5</Address>
    <Channels>1</Channels>
+   <Modifier Channel="0" Name="Exponential Shallow"/>
   </Fixture>
   <Fixture>
    <Manufacturer>Optima Lighting</Manufacturer>
@@ -169,6 +173,26 @@
    <Channels>25</Channels>
    <ExcludeFade>6,15,20,23,24</ExcludeFade>
   </Fixture>
+  <Fixture>
+   <Manufacturer>Blizzard</Manufacturer>
+   <Model>Helios</Model>
+   <Mode>Extended</Mode>
+   <ID>15</ID>
+   <Name>Helios Floor #1</Name>
+   <Universe>0</Universe>
+   <Address>150</Address>
+   <Channels>25</Channels>
+  </Fixture>
+  <Fixture>
+   <Manufacturer>Blizzard</Manufacturer>
+   <Model>Helios</Model>
+   <Mode>Extended</Mode>
+   <ID>16</ID>
+   <Name>Helios Floor #2</Name>
+   <Universe>0</Universe>
+   <Address>175</Address>
+   <Channels>25</Channels>
+  </Fixture>
   <ChannelsGroup ID="0" Name="Optima Red" Value="0">4,0,5,0,6,0,7,0,8,0</ChannelsGroup>
   <ChannelsGroup ID="1" Name="Optima Green" Value="0">4,1,5,1,6,1,7,1,8,1</ChannelsGroup>
   <ChannelsGroup ID="2" Name="Optima Blue" Value="0">4,2,5,2,6,2,7,2,8,2</ChannelsGroup>
@@ -195,6 +219,10 @@
    <FixtureVal ID="0">0,255</FixtureVal>
    <FixtureVal ID="6">0,255,1,200,2,90,3,255</FixtureVal>
    <FixtureVal ID="10">0,255,1,190,2,100</FixtureVal>
+  </Function>
+  <Function ID="2" Type="Scene" Name="Director Light">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="8">0,255,1,255,2,255,3,255</FixtureVal>
   </Function>
   <Function ID="4" Type="Scene" Name="UC" Path="Areas">
    <Speed FadeIn="500" FadeOut="500" Duration="0"/>
@@ -262,7 +290,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="0" Y="0" Width="380" Height="365"/>
+    <WindowState Visible="False" X="0" Y="0" Width="380" Height="365"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -277,7 +305,7 @@
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
-     <WindowState Visible="True" X="5" Y="35" Width="260" Height="320"/>
+     <WindowState Visible="False" X="5" Y="35" Width="260" Height="320"/>
      <AllowChildren>False</AllowChildren>
      <AllowResize>False</AllowResize>
      <ShowHeader>False</ShowHeader>
@@ -285,7 +313,7 @@
      <Collapsed>False</Collapsed>
      <Disabled>False</Disabled>
      <Slider Caption="DR" ID="10" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="10" Y="10" Width="60" Height="300"/>
+      <WindowState Visible="False" X="10" Y="10" Width="60" Height="300"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -300,7 +328,7 @@
       </Playback>
      </Slider>
      <Slider Caption="DC" ID="11" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="70" Y="10" Width="60" Height="300"/>
+      <WindowState Visible="False" X="70" Y="10" Width="60" Height="300"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -315,7 +343,7 @@
       </Playback>
      </Slider>
      <Slider Caption="DR" ID="12" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="130" Y="10" Width="60" Height="300"/>
+      <WindowState Visible="False" X="130" Y="10" Width="60" Height="300"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -330,7 +358,7 @@
       </Playback>
      </Slider>
      <Slider Caption="UC" ID="13" WidgetStyle="Slider" InvertedAppearance="false">
-      <WindowState Visible="True" X="190" Y="10" Width="60" Height="300"/>
+      <WindowState Visible="False" X="190" Y="10" Width="60" Height="300"/>
       <Appearance>
        <FrameStyle>Sunken</FrameStyle>
        <ForegroundColor>Default</ForegroundColor>
@@ -354,7 +382,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="380" Y="0" Width="260" Height="220"/>
+    <WindowState Visible="False" X="380" Y="0" Width="260" Height="220"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -362,7 +390,7 @@
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
     <Button Caption="W" ID="15" Icon="">
-     <WindowState Visible="True" X="95" Y="40" Width="50" Height="50"/>
+     <WindowState Visible="False" X="95" Y="40" Width="50" Height="50"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -376,7 +404,7 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Button Caption="A" ID="16" Icon="">
-     <WindowState Visible="True" X="45" Y="90" Width="50" Height="50"/>
+     <WindowState Visible="False" X="45" Y="90" Width="50" Height="50"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -390,7 +418,7 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Button Caption="S" ID="17" Icon="">
-     <WindowState Visible="True" X="95" Y="90" Width="50" Height="50"/>
+     <WindowState Visible="False" X="95" Y="90" Width="50" Height="50"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -404,7 +432,7 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Button Caption="D" ID="18" Icon="">
-     <WindowState Visible="True" X="145" Y="90" Width="50" Height="50"/>
+     <WindowState Visible="False" X="145" Y="90" Width="50" Height="50"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -418,7 +446,7 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Button Caption="Blackout" ID="19" Icon="">
-     <WindowState Visible="True" X="115" Y="140" Width="115" Height="50"/>
+     <WindowState Visible="False" X="115" Y="140" Width="115" Height="50"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -432,7 +460,7 @@
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Button Caption="All (z)" ID="1" Icon="">
-     <WindowState Visible="True" X="65" Y="140" Width="50" Height="50"/>
+     <WindowState Visible="False" X="65" Y="140" Width="50" Height="50"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -445,9 +473,22 @@
      <Key>Z</Key>
      <Intensity Adjust="False">100</Intensity>
     </Button>
+    <Button Caption="Director Light" ID="3" Icon="">
+     <WindowState Visible="False" X="5" Y="140" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="2"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
    </Frame>
    <CueList Caption="Cue list" ID="2">
-    <WindowState Visible="True" X="835" Y="0" Width="750" Height="440"/>
+    <WindowState Visible="False" X="835" Y="0" Width="750" Height="440"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
