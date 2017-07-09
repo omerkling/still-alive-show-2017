@@ -295,6 +295,10 @@
    <Step Number="67" FadeIn="0" Hold="4294967294" FadeOut="0">109</Step>
    <Step Number="68" FadeIn="0" Hold="4294967294" FadeOut="0">110</Step>
    <Step Number="69" FadeIn="0" Hold="4294967294" FadeOut="0">109</Step>
+   <Step Number="70" FadeIn="0" Hold="4294967294" FadeOut="0">113</Step>
+   <Step Number="71" FadeIn="0" Hold="4294967294" FadeOut="0">114</Step>
+   <Step Number="72" FadeIn="0" Hold="4294967294" FadeOut="0">115</Step>
+   <Step Number="73" FadeIn="0" Hold="4294967294" FadeOut="0">116</Step>
   </Function>
   <Function ID="4" Type="Scene" Name="UC" Path="Areas">
    <Speed FadeIn="500" FadeOut="500" Duration="0"/>
@@ -835,19 +839,19 @@
    <Speed FadeIn="350" FadeOut="2000" Duration="0"/>
    <FixtureVal ID="14">5,255</FixtureVal>
   </Function>
-  <Function ID="113" Type="Collection" Name="9: Scene Change" Path="9: Google I/O">
+  <Function ID="113" Type="Collection" Name="9: Scene Change" Path="9: Google IO">
    <Step Number="0">11</Step>
    <Step Number="1">111</Step>
   </Function>
-  <Function ID="114" Type="Collection" Name="9: Blackout" Path="9: Google I/O">
+  <Function ID="114" Type="Collection" Name="9: Blackout" Path="9: Google IO">
    <Step Number="0">111</Step>
    <Step Number="1">7</Step>
   </Function>
-  <Function ID="115" Type="Collection" Name="9: Presentation" Path="9: Google I/O">
+  <Function ID="115" Type="Collection" Name="9: Presentation" Path="9: Google IO">
    <Step Number="0">112</Step>
    <Step Number="1">111</Step>
   </Function>
-  <Function ID="116" Type="Collection" Name="9: Mingle" Path="9: Google I/O">
+  <Function ID="116" Type="Collection" Name="9: Mingle" Path="9: Google IO">
    <Step Number="0">12</Step>
    <Step Number="1">111</Step>
   </Function>
