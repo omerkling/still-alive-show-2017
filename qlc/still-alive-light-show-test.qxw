@@ -3,12 +3,14 @@
 <Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.11.0</Version>
-  <Author>Owen Merkling</Author>
+  <Version>4.10.5b</Version>
+  <Author>omerkling</Author>
  </Creator>
  <Engine>
   <InputOutputMap>
-   <Universe Name="Universe 1" ID="0"/>
+   <Universe Name="Universe 1" ID="0">
+    <Output Plugin="DMX USB" Line="0"/>
+   </Universe>
    <Universe Name="Universe 2" ID="1"/>
    <Universe Name="Universe 3" ID="2"/>
    <Universe Name="Universe 4" ID="3"/>
@@ -297,15 +299,15 @@
   <Function ID="11" Type="Scene" Name="Scene Change">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <ChannelGroupsVal>5,255,6,255,2,255</ChannelGroupsVal>
-   <FixtureVal ID="9">2,255</FixtureVal>
-   <FixtureVal ID="10">2,255</FixtureVal>
-   <FixtureVal ID="11">2,255</FixtureVal>
-   <FixtureVal ID="12">2,255</FixtureVal>
    <FixtureVal ID="4">2,255,3,255</FixtureVal>
    <FixtureVal ID="5">2,255,3,255</FixtureVal>
    <FixtureVal ID="6">2,255,3,255</FixtureVal>
    <FixtureVal ID="7">2,255,3,255</FixtureVal>
    <FixtureVal ID="8">2,255,3,255</FixtureVal>
+   <FixtureVal ID="9">2,255</FixtureVal>
+   <FixtureVal ID="10">2,255</FixtureVal>
+   <FixtureVal ID="11">2,255</FixtureVal>
+   <FixtureVal ID="12">2,255</FixtureVal>
   </Function>
   <Function ID="12" Type="Collection" Name="All" Path="Areas">
    <Step Number="0">1</Step>
@@ -324,6 +326,10 @@
   <Function ID="14" Type="Scene" Name="All Dim" Path="0: Preshow">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <ChannelGroupsVal>0,255,1,200,2,90,3,150,4,100,5,40,6,150</ChannelGroupsVal>
+   <FixtureVal ID="0">0,150</FixtureVal>
+   <FixtureVal ID="1">0,150</FixtureVal>
+   <FixtureVal ID="2">0,150</FixtureVal>
+   <FixtureVal ID="3">0,150</FixtureVal>
    <FixtureVal ID="4">0,255,1,200,2,90,3,150</FixtureVal>
    <FixtureVal ID="5">0,255,1,200,2,90,3,150</FixtureVal>
    <FixtureVal ID="6">0,255,1,200,2,90,3,150</FixtureVal>
@@ -333,10 +339,6 @@
    <FixtureVal ID="10">0,150,1,100,2,40</FixtureVal>
    <FixtureVal ID="11">0,150,1,100,2,40</FixtureVal>
    <FixtureVal ID="12">0,150,1,100,2,40</FixtureVal>
-   <FixtureVal ID="0">0,150</FixtureVal>
-   <FixtureVal ID="1">0,150</FixtureVal>
-   <FixtureVal ID="2">0,150</FixtureVal>
-   <FixtureVal ID="3">0,150</FixtureVal>
   </Function>
   <Function ID="15" Type="Collection" Name="1: Cubicles and Microkitchen" Path="1: First Day">
    <Step Number="0">4</Step>
@@ -362,7 +364,7 @@
   </Function>
   <Function ID="21" Type="Scene" Name="2S: Narrator Spot Set" Path="2S: Code Monkey">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="14">0,60,2,70,6,6,15,34</FixtureVal>
+   <FixtureVal ID="14">0,95,2,57,6,6,15,34</FixtureVal>
   </Function>
   <Function ID="22" Type="Collection" Name="2S: Narrator Spot" Path="2S: Code Monkey">
    <Step Number="0">21</Step>
@@ -409,12 +411,12 @@
   <Function ID="31" Type="Scene" Name="Meeting Room Dim" Path="3: Team Meeting">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <ChannelGroupsVal>0,255,1,200,2,90,3,150,4,90,5,45,6,150</ChannelGroupsVal>
+   <FixtureVal ID="0">0,150</FixtureVal>
+   <FixtureVal ID="1">0,150</FixtureVal>
    <FixtureVal ID="4">0,255,1,200,2,90,3,150</FixtureVal>
    <FixtureVal ID="6">0,255,1,200,2,90,3,150</FixtureVal>
    <FixtureVal ID="9">0,150,1,90,2,45</FixtureVal>
    <FixtureVal ID="10">0,150,1,90,2,45</FixtureVal>
-   <FixtureVal ID="0">0,150</FixtureVal>
-   <FixtureVal ID="1">0,150</FixtureVal>
   </Function>
   <Function ID="32" Type="Collection" Name="Conference Room" Path="Areas">
    <Step Number="0">1</Step>
