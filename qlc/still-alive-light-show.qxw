@@ -9,7 +9,7 @@
  <Engine>
   <InputOutputMap>
    <Universe Name="Universe 1" ID="0">
-    <Output Plugin="OSC" Line="0"/>
+    <Output Plugin="DMX USB" Line="0"/>
    </Universe>
    <Universe Name="Universe 2" ID="1">
     <Output Plugin="OSC" Line="0"/>
@@ -905,9 +905,9 @@
    <RunOrder>SingleShot</RunOrder>
    <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
    <Sequence BoundScene="121"/>
-   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="1"/>
-   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="1">17,1,255</Step>
-   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0" Values="1"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="2"/>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="2">17,1,255</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0" Values="2"/>
   </Function>
   <Function ID="123" Type="Chaser" Name="Prev">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1168,7 +1168,7 @@
      <Key>Space</Key>
     </Next>
     <Previous>
-     <Key>,</Key>
+     <Key>P</Key>
     </Previous>
     <Playback>
      <Key>Return</Key>
@@ -1202,6 +1202,7 @@
      </Appearance>
      <Function ID="123"/>
      <Action>Toggle</Action>
+     <Key>,</Key>
      <Intensity Adjust="False">100</Intensity>
     </Button>
     <Button Caption="Next" ID="7" Icon="">
@@ -1215,6 +1216,7 @@
      </Appearance>
      <Function ID="122"/>
      <Action>Toggle</Action>
+     <Key>.</Key>
      <Intensity Adjust="False">100</Intensity>
     </Button>
    </Frame>
