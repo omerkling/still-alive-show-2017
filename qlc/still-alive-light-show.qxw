@@ -3,15 +3,13 @@
 <Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.10.5b</Version>
-  <Author>omerkling</Author>
+  <Version>4.11.0</Version>
+  <Author>Owen Merkling</Author>
  </Creator>
  <Engine>
   <InputOutputMap>
    <Universe Name="Universe 1" ID="0">
-    <Output Plugin="DMX USB" Line="0">
-     <PluginParameters UniverseChannels="200"/>
-    </Output>
+    <Output Plugin="DMX USB"/>
    </Universe>
    <Universe Name="Universe 2" ID="1">
     <Output Plugin="OSC" Line="0"/>
@@ -277,7 +275,7 @@
    <Step Number="32" FadeIn="0" Hold="4294967294" FadeOut="0">34</Step>
    <Step Number="33" FadeIn="0" Hold="4294967294" FadeOut="0">35</Step>
    <Step Number="34" FadeIn="0" Hold="4294967294" FadeOut="0">68</Step>
-   <Step Number="35" FadeIn="0" Hold="4294967294" FadeOut="0">71</Step>
+   <Step Number="35" FadeIn="0" Hold="4294967294" FadeOut="0">156</Step>
    <Step Number="36" FadeIn="0" Hold="4294967294" FadeOut="0">72</Step>
    <Step Number="37" FadeIn="0" Hold="4294967294" FadeOut="0">73</Step>
    <Step Number="38" FadeIn="0" Hold="4294967294" FadeOut="0">74</Step>
@@ -324,6 +322,16 @@
    <Step Number="79" FadeIn="0" Hold="4294967294" FadeOut="0">134</Step>
    <Step Number="80" FadeIn="0" Hold="4294967294" FadeOut="0">135</Step>
    <Step Number="81" FadeIn="0" Hold="4294967294" FadeOut="0">136</Step>
+   <Step Number="82" FadeIn="0" Hold="4294967294" FadeOut="0">155</Step>
+   <Step Number="83" FadeIn="0" Hold="4294967294" FadeOut="0">137</Step>
+   <Step Number="84" FadeIn="0" Hold="4294967294" FadeOut="0">141</Step>
+   <Step Number="85" FadeIn="0" Hold="4294967294" FadeOut="0">147</Step>
+   <Step Number="86" FadeIn="0" Hold="4294967294" FadeOut="0">149</Step>
+   <Step Number="87" FadeIn="0" Hold="4294967294" FadeOut="0">150</Step>
+   <Step Number="88" FadeIn="0" Hold="4294967294" FadeOut="0">149</Step>
+   <Step Number="89" FadeIn="0" Hold="4294967294" FadeOut="0">151</Step>
+   <Step Number="90" FadeIn="0" Hold="4294967294" FadeOut="0">153</Step>
+   <Step Number="91" FadeIn="0" Hold="4294967294" FadeOut="0">154</Step>
   </Function>
   <Function ID="4" Type="Scene" Name="UC" Path="Areas">
    <Speed FadeIn="500" FadeOut="500" Duration="0"/>
@@ -432,7 +440,9 @@
    <Step Number="1">5</Step>
    <Step Number="2">6</Step>
   </Function>
-  <Function ID="17" Type="Collection" Name="0: Warn" Path="0: Preshow"/>
+  <Function ID="17" Type="Collection" Name="0: Warn" Path="0: Preshow">
+   <Step Number="0">13</Step>
+  </Function>
   <Function ID="18" Type="Collection" Name="0: Blackout" Path="0: Preshow">
    <Step Number="0">7</Step>
    <Step Number="1">25</Step>
@@ -581,9 +591,18 @@
   </Function>
   <Function ID="49" Type="Scene" Name="3s: Slow Things Down On" Path="3s: I Feel Fantastic">
    <Speed FadeIn="1000" FadeOut="2000" Duration="0"/>
+   <ChannelGroupsVal>0,216,1,151,2,105,3,84,4,159,5,233,6,175</ChannelGroupsVal>
    <FixtureVal ID="14">5,174</FixtureVal>
    <FixtureVal ID="15">5,87</FixtureVal>
    <FixtureVal ID="16">5,80</FixtureVal>
+   <FixtureVal ID="4">0,216,1,151,2,105,3,175</FixtureVal>
+   <FixtureVal ID="5">0,216,1,151,2,105,3,175</FixtureVal>
+   <FixtureVal ID="6">0,216,1,151,2,105,3,175</FixtureVal>
+   <FixtureVal ID="7">0,216,1,151,2,105,3,175</FixtureVal>
+   <FixtureVal ID="9">0,84,1,159,2,233</FixtureVal>
+   <FixtureVal ID="10">0,84,1,159,2,233</FixtureVal>
+   <FixtureVal ID="11">0,84,1,159,2,233</FixtureVal>
+   <FixtureVal ID="12">0,84,1,159,2,233</FixtureVal>
   </Function>
   <Function ID="50" Type="Collection" Name="3s: Sometimes I like to slow things down...." Path="3s: I Feel Fantastic">
    <Step Number="0">49</Step>
@@ -622,10 +641,18 @@
    <FixtureVal ID="16">0,67,1,0,2,51,3,0,4,0,5,0,6,185,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,196,16,0,18,0,19,0,20,160,21,136,22,0,23,0,24,0</FixtureVal>
   </Function>
   <Function ID="57" Type="Scene" Name="3s: Jazz hands on" Path="3s: I Feel Fantastic">
-   <Speed FadeIn="1000" FadeOut="100" Duration="0"/>
+   <Speed FadeIn="500" FadeOut="100" Duration="0"/>
    <FixtureVal ID="14">5,255</FixtureVal>
    <FixtureVal ID="15">5,255</FixtureVal>
    <FixtureVal ID="16">5,255</FixtureVal>
+   <FixtureVal ID="10">0,0,1,0,2,0,3,156,4,255</FixtureVal>
+   <FixtureVal ID="6">0,144,1,177,2,107,3,255,4,255</FixtureVal>
+   <FixtureVal ID="9">0,0,1,0,2,0,3,121,4,255</FixtureVal>
+   <FixtureVal ID="4">0,232,1,182,2,195,3,255,4,255</FixtureVal>
+   <FixtureVal ID="12">0,0,1,0,2,0,3,42,4,255,5,255</FixtureVal>
+   <FixtureVal ID="7">0,224,1,147,2,199,3,255,4,255</FixtureVal>
+   <FixtureVal ID="11">0,0,1,0,2,0,3,255,4,255,5,0</FixtureVal>
+   <FixtureVal ID="5">0,78,1,194,2,231,3,255,4,255</FixtureVal>
   </Function>
   <Function ID="58" Type="Collection" Name="3s: Jazz Hands" Path="3s: I Feel Fantastic">
    <Step Number="0">57</Step>
@@ -970,7 +997,7 @@
    <Step Number="1">126</Step>
    <Step Number="2">127</Step>
   </Function>
-  <Function ID="130" Type="Scene" Name="9s: Mandelbrot set Solo Spot Set" Path="9s: Mandelbrot Set">
+  <Function ID="130" Type="Scene" Name="9s: Mandelbrot Solo Spot Set" Path="9s: Mandelbrot Set">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="13">0,80,1,0,2,49,3,0,4,0,5,0,6,6,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,34,16,0,18,0,19,0,20,0,21,0,22,0,23,0,24,0</FixtureVal>
    <FixtureVal ID="14">0,93,1,0,2,47,3,0,4,0,5,0,6,6,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,34,16,0,18,0,19,0,20,0,21,0,22,0,23,0,24,0</FixtureVal>
@@ -985,28 +1012,24 @@
    <Step Number="1">130</Step>
    <Step Number="2">117</Step>
   </Function>
-  <Function ID="133" Type="Scene" Name="9s: ...And so on (first chorus)">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="4294967295"/>
+  <Function ID="134" Type="Collection" Name="9s: And so on... (first chorus)" Path="9s: Mandelbrot Set">
+   <Step Number="0">130</Step>
+   <Step Number="1">131</Step>
+   <Step Number="2">117</Step>
+   <Step Number="3">1</Step>
   </Function>
-  <Function ID="134" Type="Collection" Name="9: And so on... (first chorus)" Path="9s: Mandelbrot Set">
-   <Step Number="0">12</Step>
-   <Step Number="1">130</Step>
-   <Step Number="2">131</Step>
-  </Function>
-  <Function ID="135" Type="Collection" Name="9: Jeff!" Path="9s: Mandelbrot Set">
+  <Function ID="135" Type="Collection" Name="9s: Jeff!" Path="9s: Mandelbrot Set">
    <Step Number="0">12</Step>
    <Step Number="1">130</Step>
   </Function>
-  <Function ID="136" Type="Collection" Name="9s:  Your actions really matter...">
+  <Function ID="136" Type="Collection" Name="9s:  Your actions really matter..." Path="9s: Mandelbrot Set">
    <Step Number="0">131</Step>
    <Step Number="1">130</Step>
    <Step Number="2">117</Step>
   </Function>
-  <Function ID="137" Type="Collection" Name="9s:  Your actions really matter... (Copy)">
+  <Function ID="137" Type="Collection" Name="9s:  Go on Change the World in a Tiny way (last time)" Path="9s: Mandelbrot Set">
    <Step Number="0">131</Step>
    <Step Number="1">130</Step>
-   <Step Number="2">117</Step>
   </Function>
   <Function ID="138" Type="Chaser" Name="Slideshow Next">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1028,6 +1051,10 @@
    <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="Common"/>
    <Step Number="0" FadeIn="0" Hold="0" FadeOut="4000">32</Step>
   </Function>
+  <Function ID="141" Type="Collection" Name="9s: Blackout" Path="9s: Mandelbrot Set">
+   <Step Number="0">130</Step>
+   <Step Number="1">7</Step>
+  </Function>
   <Function ID="142" Type="Scene" Name="Slideshow Zero" Path="Slideshow Controls">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="17">0,0,1,0,2,0,3,0</FixtureVal>
@@ -1044,6 +1071,73 @@
   <Function ID="144" Type="Scene" Name="Slideshow Prev" Path="Slideshow Controls">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="17">2,255</FixtureVal>
+  </Function>
+  <Function ID="145" Type="Scene" Name="E: Curtain Call Spot Up" Path="E: Curtain Call">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="13">5,255</FixtureVal>
+   <FixtureVal ID="14">5,255</FixtureVal>
+  </Function>
+  <Function ID="146" Type="Scene" Name="E: Curtain Call Pit Spot" Path="E: Curtain Call">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="13">0,80,1,0,2,49,3,0,4,0,5,255,6,6,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,34,16,0,18,0,19,0,20,0,21,0,22,0,23,0,24,0</FixtureVal>
+   <FixtureVal ID="14">0,93,1,0,2,47,3,0,4,0,5,255,6,6,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,34,16,0,18,0,19,0,20,0,21,0,22,0,23,0,24,0</FixtureVal>
+  </Function>
+  <Function ID="147" Type="Collection" Name="E: Individual Calls" Path="E: Curtain Call">
+   <Step Number="0">145</Step>
+   <Step Number="1">148</Step>
+   <Step Number="2">152</Step>
+  </Function>
+  <Function ID="148" Type="Scene" Name="E: Curtain Call Wash" Path="E: Curtain Call">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>0,170,1,100,2,50,3,170,4,100,5,50,6,170,7,182</ChannelGroupsVal>
+   <FixtureVal ID="0">0,182</FixtureVal>
+   <FixtureVal ID="1">0,182</FixtureVal>
+   <FixtureVal ID="2">0,182</FixtureVal>
+   <FixtureVal ID="3">0,182</FixtureVal>
+   <FixtureVal ID="4">0,170,1,100,2,50,3,170</FixtureVal>
+   <FixtureVal ID="5">0,170,1,100,2,50,3,170</FixtureVal>
+   <FixtureVal ID="6">0,170,1,100,2,50,3,170</FixtureVal>
+   <FixtureVal ID="7">0,170,1,100,2,50,3,170</FixtureVal>
+   <FixtureVal ID="9">0,170,1,100,2,50</FixtureVal>
+   <FixtureVal ID="10">0,170,1,100,2,50</FixtureVal>
+   <FixtureVal ID="11">0,170,1,100,2,50</FixtureVal>
+   <FixtureVal ID="12">0,170,1,100,2,50</FixtureVal>
+   <FixtureVal ID="4294967295"/>
+  </Function>
+  <Function ID="149" Type="Collection" Name="E: Group Bow" Path="E: Curtain Call">
+   <Step Number="0">12</Step>
+  </Function>
+  <Function ID="150" Type="Collection" Name="E: Pit Bow" Path="E: Curtain Call">
+   <Step Number="0">146</Step>
+   <Step Number="1">12</Step>
+  </Function>
+  <Function ID="151" Type="Collection" Name="E: Solo spot" Path="E: Curtain Call">
+   <Step Number="0">145</Step>
+   <Step Number="1">148</Step>
+   <Step Number="2">152</Step>
+  </Function>
+  <Function ID="152" Type="Scene" Name="E: Curtain Call Spot  Set" Path="E: Curtain Call">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="13">0,80,1,0,2,49,3,0,4,0,5,0,6,6,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,34,16,0,18,0,19,0,20,0,21,0,22,0,23,0,24,0</FixtureVal>
+   <FixtureVal ID="14">0,93,1,0,2,47,3,0,4,0,5,0,6,6,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,34,16,0,18,0,19,0,20,0,21,0,22,0,23,0,24,0</FixtureVal>
+  </Function>
+  <Function ID="153" Type="Collection" Name="E: Blackout" Path="E: Curtain Call">
+   <Step Number="0">152</Step>
+   <Step Number="1">7</Step>
+  </Function>
+  <Function ID="154" Type="Collection" Name="E: Aftershow" Path="E: Curtain Call">
+   <Step Number="0">12</Step>
+  </Function>
+  <Function ID="155" Type="Collection" Name="9s: Everybody" Path="9s: Mandelbrot Set">
+   <Step Number="0">12</Step>
+   <Step Number="1">130</Step>
+   <Step Number="2">131</Step>
+  </Function>
+  <Function ID="156" Type="Collection" Name="4: Calvin Improv" Path="4: Headcount">
+   <Step Number="0">6</Step>
+   <Step Number="1">69</Step>
+   <Step Number="2">66</Step>
+   <Step Number="3">11</Step>
   </Function>
   <Monitor DisplayMode="0" ShowLabels="0">
    <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
