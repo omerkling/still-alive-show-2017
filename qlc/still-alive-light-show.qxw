@@ -9,7 +9,9 @@
  <Engine>
   <InputOutputMap>
    <Universe Name="Universe 1" ID="0">
-    <Output Plugin="DMX USB"/>
+    <Output Plugin="DMX USB" Line="0">
+     <PluginParameters UniverseChannels="200"/>
+    </Output>
    </Universe>
    <Universe Name="Universe 2" ID="1">
     <Output Plugin="OSC" Line="0"/>
@@ -566,7 +568,7 @@
    <SpeedModes FadeIn="PerStep" FadeOut="PerStep" Duration="Common"/>
    <Step Number="0" FadeIn="25" Hold="0" FadeOut="25">32</Step>
   </Function>
-  <Function ID="44" Type="Scene" Name="3s: Tableu Spot Set">
+  <Function ID="44" Type="Scene" Name="3s: Tableu Spot Set" Path="3s: I Feel Fantastic">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="14">0,94,1,234,2,49,3,0,4,0,5,0,6,6,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,34,16,0,18,0,19,0,20,0,21,0,22,112,23,0,24,0</FixtureVal>
   </Function>
@@ -766,7 +768,7 @@
   </Function>
   <Function ID="80" Type="Scene" Name="6s: Code Monkey Reprise Set" Path="6s: Code Monkey Reprise">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="13">0,75,1,0,2,51,3,0,4,0,5,0,6,7,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,33,16,0,18,0,19,0,20,0,21,0,22,45,23,0,24,0</FixtureVal>
+   <FixtureVal ID="13">0,75,1,0,2,51,3,0,4,0,5,0,6,7,7,120,8,0,9,0,10,0,11,85,12,0,13,255,14,0,15,2,16,0,18,0,19,0,20,0,21,0,22,45,23,0,24,0</FixtureVal>
   </Function>
   <Function ID="81" Type="Collection" Name="6: Blackout" Path="6: Cancelled">
    <Step Number="0">7</Step>
@@ -940,13 +942,13 @@
    <FixtureVal ID="12">0,170,1,100,2,50</FixtureVal>
    <FixtureVal ID="4294967295"/>
   </Function>
-  <Function ID="118" Type="Scene" Name="3s: Tableu Spot Up">
+  <Function ID="118" Type="Scene" Name="3s: Tableu Spot Up" Path="3s: I Feel Fantastic">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="14">5,255</FixtureVal>
   </Function>
   <Function ID="119" Type="Scene" Name="6s: Code Monkey Reprise Chair Set" Path="6s: Code Monkey Reprise">
    <Speed FadeIn="1000" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="13">0,78,1,0,2,49,3,0,4,0,5,0,6,7,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,33,16,0,18,0,19,0,20,0,21,0,22,79,23,0,24,0</FixtureVal>
+   <FixtureVal ID="13">0,78,1,0,2,49,3,0,4,0,5,0,6,7,7,120,8,0,9,0,10,0,11,85,12,0,13,255,14,0,15,0,16,0,18,0,19,0,20,0,21,0,22,79,23,0,24,0</FixtureVal>
   </Function>
   <Function ID="120" Type="Collection" Name="6s: Code Monkey Reprise Chair" Path="6s: Code Monkey Reprise">
    <Step Number="0">82</Step>
@@ -1166,6 +1168,10 @@
   <Function ID="160" Type="Collection" Name="0: Overture" Path="0: Preshow">
    <Step Number="0">157</Step>
    <Step Number="1">14</Step>
+  </Function>
+  <Function ID="161" Type="Scene" Name="6s: Code Monkey Reprise Chair Set (Copy)" Path="6s: Code Monkey Reprise">
+   <Speed FadeIn="1000" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="13">0,78,1,0,2,49,3,0,4,0,5,0,6,7,7,120,8,0,9,0,10,0,11,85,12,0,13,255,14,0,15,0,16,0,18,0,19,0,20,0,21,0,22,79,23,0,24,0</FixtureVal>
   </Function>
   <Monitor DisplayMode="0" ShowLabels="0">
    <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
